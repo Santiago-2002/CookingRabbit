@@ -9,7 +9,7 @@ Estos paquetes de Assets son utilizados en el juego y pueden o no estar incorpor
 - [2D Simple UI Pack](https://assetstore.unity.com/packages/2d/gui/icons/2d-simple-ui-pack-218050)
 
 ### Documento de Diseño
-[VDD](/VDD/README.md)  
+[VDD](Assets/VDD/README2.md)  
 
 ---
 ### Tareas Pendientes (ToDo)
