@@ -98,8 +98,8 @@ _describir las armas, gemas, monedas, etc. que se pueden recoger/obtener/adquiri
 ![alt text][wireframe]  
 ![alt text][Level1]  
 <!-- Referencias para las imagenes -->
-[wireframe]: /Assets/VDD/WF_UI_JUEGO.png "Wireframe de las UI" 
-[Level1]: /Assets/VDD/Level1.png "Esquema para el nivel 1"  
+[wireframe]: /VDD/WF_UI_JUEGO.png "Wireframe de las UI" 
+[Level1]: /VDD/ReadmeIMG/Level1.png "Esquema para el nivel 1"  
 
    2.1 Main Menu Interface:  
        _describir las opciones del menú ppal_  
