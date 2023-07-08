@@ -833,6 +833,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 844449826591888630, guid: 961075d0dc543fd47abfc2b5d4acecc8, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 844449826591888630, guid: 961075d0dc543fd47abfc2b5d4acecc8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1484473043
+      objectReference: {fileID: 0}
     - target: {fileID: 1186752040101883100, guid: 961075d0dc543fd47abfc2b5d4acecc8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2001,6 +2009,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4038350162415549931, guid: 4c1867fabcb365045a2e9903d86ec7e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756655255974664769, guid: 4c1867fabcb365045a2e9903d86ec7e2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
