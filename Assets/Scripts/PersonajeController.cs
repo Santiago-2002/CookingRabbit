@@ -23,7 +23,7 @@ public class PersonajeController : MonoBehaviour
     // Start is called before the first frame update // Personaje iniciara en posicion X -8.57 Y 2.2
     void Start()
     {
-        //gameObject.transform.position = new Vector3(-7.56f, Niveltecho,0);
+        gameObject.transform.position = new Vector3(-7.56f, Niveltecho,0);
         Debug.Log("INT");
         Debug.Log("VIDAS");
         rb2d = GetComponent<Rigidbody2D>();
