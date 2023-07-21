@@ -9,6 +9,6 @@ public class CameraScript : MonoBehaviour
    
     void Update()
     {
-        transform.position = new Vector3(Player2.transform.position.x, transform.position.y, transform.position.z);
+        transform.position = new Vector3(Player2.transform.position.x, Player2.transform.position.y, transform.position.z);
     }
 }
