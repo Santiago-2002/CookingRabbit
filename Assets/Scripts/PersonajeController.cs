@@ -18,11 +18,16 @@ public class PersonajeController : MonoBehaviour
      private Rigidbody2D rb2d;
      private Animator animator;
      private SpriteRenderer spriteR;
+     private CharacterStatsManager manager;
      
      [SerializeField] private AudioSource Salto_SFX;
     // Start is called before the first frame update // Personaje iniciara en posicion X -8.57 Y 2.2
     void Start()
     {
+
+        manager = GetComponent<CharacterStatsManager>();
+        transform.position = manager.getRespawnPoint();
+        Debug.Log("[CharacterController] - Start");
         gameObject.transform.position = new Vector3(-7.56f, Niveltecho,0);
         Debug.Log("INT");
         Debug.Log("VIDAS");
