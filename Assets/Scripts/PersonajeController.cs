@@ -27,7 +27,7 @@ public class PersonajeController : MonoBehaviour
 
         manager = GetComponent<CharacterStatsManager>();
         transform.position = manager.getRespawnPoint();
-        Debug.Log("[CharacterController] - Start");
+        Debug.Log("[PersonajeController] - Start");
         gameObject.transform.position = new Vector3(-7.56f, Niveltecho,0);
         Debug.Log("INT");
         Debug.Log("VIDAS");

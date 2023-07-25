@@ -34,6 +34,7 @@ public class InteractionEngine : MonoBehaviour
             case "Collectable1":
                 Debug.Log("Collectable1");
                 manager.increseItem1(1);
+                Debug.Log(manager.getItems());
                 renderItems();
                 break;
             case "Collectable2":

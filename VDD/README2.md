@@ -15,13 +15,13 @@ Tercera persona 2D
 - Edades 16-30
 - Fans de los juegos de plataforma retro
 6. Idea central:  
-Recuperar el restaurante junto al libro de recetas ancestral el cual fue robado  
+Bunny debe recolectar en cada nivel los ingredientes de una receta alusiva al pais que visita
 
 7. Objetivo del juego:  
-Con cada nivel deberan derrotar enemigos y al superar el nivel se recuperara una hoja del libro ancestral 
+ Al superar cada nivel Bonny desbloqueará una receta que le permitira recuperar las paginas del libro ancestral
 
 8. Tópico del juego:  
-Juego de Plataforma Heróico  
+// Juego de Plataforma Heróico //  
 
 9. Plataformas disponibles:
 - Android
@@ -29,16 +29,16 @@ Juego de Plataforma Heróico
 
 ## Sección 2 - Background & Flujo del juego
 1. Contexto:  
-_describir el contexto/historia donde se desarrolla el juego_  
+Bunny debe encontrar la páginas perdidas del legendario libro de recetas que tenía su abuelo; las cuales fueron escondidas en distintos lugares del mundo. Para ello, debe pasar los retos y encontrar los ingredientes básicos de diversos platos según el país a donde llega; así, recuperará una de las páginas del libro de recetas y podría quedarse con el restaurante familiar.
 
 2. Historia del personaje:  
-_describir quién es el personaje y cómo se conecta con la historia del juego_  
+Bunny es un conejo que viene de una familia de cocineros muy importantes en Kioto(Japón) el cual le gusta cocinar, ya que esto lo aprendió de su abuelo GrandRabbit. Al fallecer su abuelo deja el legado a sus hijos quienes no están interesados en seguirlo. Al leer el testamento, descubren un secreto familiar y es que el libro de recetas que guarda las más exclusivas y sanadoras preparaciones del mundo había sido robado; y que, sus hojas habrían sido escondidas en diversas partes del mundo. La cláusula final menciona, que quien logre recuperar las páginas perdidas podría quedarse en su totalidad con el negocio. Por tal motivo Bunny emprende la búsqueda de las páginas perdidas para recuperar y continuar con el legado de su abuelo.
 
 3. Historia de los enemigos:  
-_describir quienes son los enemigos (si los hay) y cómo se conectan con la historia del juego_  
+Desde sus inicios, una familia de zorros cocineros fueron los principales contrincantes del restaurante de GrandRabbit y siempre tuvieron la intención de robar sus recetas; Al enterarse del fallecimiento de GrandRabbit, y que su nieto iba a ser el sucesor de dicho restaurante. Buscan la manera para impedir que Bunny no logre conseguir el libro de recetas y así continuar con su legado.
 
 4. Desarrollo de la historia:  
-_describir cómo se desarrolla la historia del juego a medida que le personaje avanza en el mismo_  
+La historia se desarrolla en un viaje por el mundo superando obstaculos que se presentan el cada pais (Nivel), recolectando los ingredientes de cada receta y asi evitando ser eliminado por sus enemigos.
 
 ## Seccción 3 - Juego
 1. Objectivo(s):
@@ -50,13 +50,12 @@ _describir cómo se desarrolla la historia del juego a medida que le personaje a
 - Regla 2 del juego
 - etc
 3. Mecánica del juego:
-  - Movimientos del personaje
-  - Movimientos de los enemigos
-  - Obstáculos y trampas
+  - Movimientos del personaje - El personaje podrá moverse de izquierda a derecha, saltar y realizar doble salto, trepar muros(WallJump) y defenderse de sus enemigos
+  - Movimientos de los enemigos - Se moveran de izquierda a derecha algunos de los enemigos, lanzaran una serie de objetos para hacerle daño al personaje
+  - Obstáculos y trampas - Hay una serie de obstaculos diferentes por cada nivel (Picos, Calderos de Fuego, Cubos Malvados, SpikedBall, SpikeHead)
 4. Completar con varios o todos de los siguientes (a necesidad)
 • Game options
-• Modes
-• Game levels
+• Game levels 
 • Player’s controls
 • Winning
 • Losing
@@ -79,20 +78,22 @@ _descripción del entorno del juego_
       - del juego  
 
 3. Armas o elementos colectables:  
-_describir las armas, gemas, monedas, etc. que se pueden recoger/obtener/adquirir/encontrar en cada nivel_ 
+VEGETALES: Brocoli, Pepino, Calabaza, Cenbolla, Esparragos, Guisantes, Espinaca, Lechuga, Pimenton, Cebolla, Zanahoria, Acelga, Rabano, Berenjena, Champiñon.
+FRUTAS:Banana, Naranja, Manzana, Mandarina, Fresa, Mora, Mango, Cereza, Frambuesa, Maracuya, Arandano, Papaya, Sandia, Kiwi, Melon, Durazno, Coco, Tomate, Uva, Guanabana, Limon, Piña, Ciruela, Melocoton
+PROTEINAS Y CARBOHIDRATOS:Res, Cerdo, Pollo, Pescado, Huevo, Frijol, Garbanzo, Almendras, Avellanas, Arroz, Pasta, Leche, Queso, Panes
+ 
+
+
 
 ## Sección 5 – Game Play I/O Controls & UI Interfaces
 1. Game Play I/O Controls:
 - Teclado  
   Movimiento del personaje:
-  - Arrow keys <- ->
-  - A and D keys  
+  - Flechas = <- ->
+  - A o D = <- -> 
   Special keys:
-  - Space = jump
-  - E = interaction (e.g. open doors)
-  - Esc = pause
-- Control de Xbox  
-  _describir los controles_  
+  - Espacio = Saltar
+  - Esc = Pausa 
 2. GUI Interfaces:
 
 ![alt text][wireframe]  
@@ -101,14 +102,20 @@ _describir las armas, gemas, monedas, etc. que se pueden recoger/obtener/adquiri
 [wireframe]: /VDD/WF_UI_JUEGO.png "Wireframe de las UI" 
 [Level1]: /VDD/ReadmeIMG/Level1.png "Esquema para el nivel 1"  
 
-   2.1 Main Menu Interface:  
-       _describir las opciones del menú ppal_  
-   2.2 Pause Menu:  
-       _describir las opciones del menú de pausa_  
-   2.3 Options Menu:  
-       _describir las opciones del menú de opciones_  
+   2.1 Menu Interface:  
+       Tiene boton de jugar, niveles, opciones, salir 
+   2.2 Pausa Menu:  
+       Tiene boton de salir al menu, activar o desactivar audio, reanudar juego 
+   2.3 Opciones Menu:  
+       Tiene boton de volver al menu principal, activar o descativar audio, ayuda rapida, informacion de desarrollador
+   2.4 Ayuda Rapida: 
+       Tiene un texto con ayuda rapida para ver como se puede jugar, boton de volver al menu de opciones
+   2.5 Informacion de desarrollador:
+       Tiene la información de desarrollador sobre quienes somos, politica y privacidad del juego, boton volver al menu de opciones
+   2.6 Niveles:
+       Tiene varios niveles los cueles se van desbloqueando a la medida que se superen, boton volver al menu principal            
 
 ## Sección 6 – Características Visuales y de Audio 
-_describir las características visuales y de sonido del videojuego_
+Tendra calidad normal para el tema de graficos e imagenes y un sonido de inicio. Otros sonidos referentes a cada nivel.
 
 ## TODAS LAS OTRAS SECCIONES QUE PUEDAN SER NECESARIAS
