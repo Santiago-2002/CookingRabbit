@@ -8,6 +8,8 @@ TagManager:
   - Collectable1
   - Collectable2
   - Collectable3
+  - Trampa
+  - FallDetector
   layers:
   - Default
   - TransparentFX

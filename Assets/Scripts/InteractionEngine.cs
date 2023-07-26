@@ -66,7 +66,7 @@ public class InteractionEngine : MonoBehaviour
     }
 
     private void manageDeath(){
-        animator.SetTrigger("desappear");
+        //animator.SetTrigger("desappear");
         manager.decreseLives();
         Debug.Log("Vidas: " + manager.getLives());
         renderLives();
@@ -82,7 +82,7 @@ public class InteractionEngine : MonoBehaviour
     private IEnumerator respawnCharacter(){
         Debug.Log("Respawn Character at " + manager.getRespawnPoint());
         yield return new WaitForSeconds(1);
-        animator.SetTrigger("respawn");
+        //animator.SetTrigger("respawn");
         transform.position = manager.getRespawnPoint();
     }
 
@@ -91,7 +91,7 @@ public class InteractionEngine : MonoBehaviour
     }
     private void renderLives(){
         int lives = manager.getLives();
-        statsRendererController.updateLives((lives>=1?true:false,lives>=2?true:false,lives>=3?true:false,lives>=4?true:false,lives>=5?true:false));
+        statsRendererController.updateLives((lives>=1?true:false,lives>=2?true:false,lives>=3?true:false));
     }
     private void renderItems(){
         statsRendererController.updateItems(manager.getItems());

@@ -7,7 +7,7 @@ public class CharacterStatsManager : MonoBehaviour
     public static CharacterStatsManager statsManager;
 
     private Vector3 respawnPoint;
-    private int lives = 5;
+    private int lives = 3;
     private int score = 0;
     private int[] items = new int[]{0,0,0};
     //private bool[] powers = new bool[]{false,false,false};

@@ -5,10 +5,10 @@ using UnityEngine;
 public class PersonajeController : MonoBehaviour
 {
     
-     private int Vidas = 3;
+     //private int Vidas = 3;
 
      //float NivelPiso = -0.1f; 
-     float Niveltecho = 2.99f;
+     float Niveltecho = 1.3f;
      float velocidad = 5f;
      float fuerzaImpulso = 10000;
      float fuerzasalto = 37;
@@ -112,19 +112,19 @@ public class PersonajeController : MonoBehaviour
         if(collision.transform.tag == "Ground"){
             Piso = true;
             Debug.Log("GROUND COLLISION");
-            animator.SetBool("Jump", false);
+            //animator.SetBool("Jump", false);
             animator.SetBool("Falling", false);
             
         }
         else if(collision.transform.tag == "Obstaculo"){
             Piso = true;
             Debug.Log("OBSTACLE COLLISION");
-            animator.SetBool("Jump", false);
-            animator.SetBool("Falling", false);
+            //animator.SetBool("Jump", false);
+            //animator.SetBool("Falling", false);
         }
     }
 
-     private void OnTriggerEnter2D(Collider2D collision){
+     /*private void OnTriggerEnter2D(Collider2D collision){
         Debug.Log("Caida");
         Vidas -= 1;
         Debug.Log("VIDAS: " + Vidas);
@@ -134,7 +134,7 @@ public class PersonajeController : MonoBehaviour
         }
         gameObject.transform.position = new Vector3(-7.56f, Niveltecho,0);
 
-     } 
+     } */
         
     
 }

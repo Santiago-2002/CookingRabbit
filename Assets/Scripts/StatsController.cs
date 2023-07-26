@@ -34,17 +34,13 @@ public class StatsController : MonoBehaviour
         //_powers[2]    = transform.GetChild(3).GetChild(2).gameObject.GetComponent<Image>();
     }
 
-    public void updateLives((bool live1, bool live2, bool live3, bool live4, bool live5)lives){
+    public void updateLives((bool live1, bool live2, bool live3)lives){
         _lives[0].enabled = lives.live1?true:false;
         _NO_lives[0].enabled = !_lives[0].enabled;
         _lives[1].enabled = lives.live2?true:false;
         _NO_lives[1].enabled = !_lives[1].enabled;
         _lives[2].enabled = lives.live3?true:false;
         _NO_lives[2].enabled = !_lives[2].enabled;
-         _lives[3].enabled = lives.live3?true:false;
-        _NO_lives[3].enabled = !_lives[3].enabled;
-         _lives[4].enabled = lives.live3?true:false;
-        _NO_lives[4].enabled = !_lives[4].enabled;
     }
 
     public void updateScore(int score){

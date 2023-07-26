@@ -6,20 +6,21 @@ public class CollectableController : MonoBehaviour
 {
     [SerializeField] private AudioSource collectable_SFX;
 
-    private Animator animator;
+    // private Animator animator;
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collider){
         if(collider.tag == "Player"){
             GetComponent<Collider2D>().enabled=false; // Se deshabilita el collider para evitar que lo toque más de una vez en la misma acción
             Debug.Log("Collectable");
+            GetComponent<Renderer>().enabled=false;
             collectable_SFX.Play();
-            animator.SetTrigger("collected");
-            StartCoroutine(destroyObjectWithAudio(collectable_SFX));
+            // animator.SetTrigger("collected");
+            //StartCoroutine(destroyObjectWithAudio(collectable_SFX));
         }
     }
 
