@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
 
-   void Start() {
+   /*void Start() {
       Debug.Log("ENTERING ESCENE: " + SceneManager.GetActiveScene().buildIndex);
-   }
+   }*/ 
 
     public void changeScene(int _escena){
       Debug.Log("CALL -> changeScene: " + _escena);
