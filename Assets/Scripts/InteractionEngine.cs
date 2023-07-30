@@ -26,6 +26,7 @@ public class InteractionEngine : MonoBehaviour
             case "Trampa":
                 Debug.Log("TRAMPA");
                 manageDeath();
+                Debug.Log("Trampa1");
                 break;
             case "FallDetector":
                 Debug.Log("Caída");
@@ -67,12 +68,15 @@ public class InteractionEngine : MonoBehaviour
 
     private void manageDeath(){
         //animator.SetTrigger("desappear");
+        Debug.Log("Muestra Vidas" + manager.getLives());
         manager.decreseLives();
         Debug.Log("Vidas: " + manager.getLives());
         renderLives();
+        Debug.Log("Muestra Vidas" + manager.getLives());
         if(manager.getLives() <= 0){
             Debug.Log("GAME OVER");
             gameoverRendererController.setActive(true);
+            Debug.Log("Muestra Vidas" + manager.getLives());
         }
         else{
             StartCoroutine(respawnCharacter());
@@ -81,6 +85,7 @@ public class InteractionEngine : MonoBehaviour
 
     private IEnumerator respawnCharacter(){
         Debug.Log("Respawn Character at " + manager.getRespawnPoint());
+
         yield return new WaitForSeconds(1);
         //animator.SetTrigger("respawn");
         transform.position = manager.getRespawnPoint();

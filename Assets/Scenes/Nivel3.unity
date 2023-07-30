@@ -29161,7 +29161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec6063f0b4901c42b16958b64c51ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player2: {fileID: 933961194}
+  Player2: {fileID: 1401896906}
 --- !u!1001 &846729484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29348,11 +29348,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7949816cc74b6a94e9e193d1506fd4b5, type: 3}
---- !u!1 &933961194 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4859162235925215287, guid: 7949816cc74b6a94e9e193d1506fd4b5, type: 3}
-  m_PrefabInstance: {fileID: 933961193}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1003452593
 GameObject:
   m_ObjectHideFlags: 0
@@ -29858,6 +29853,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1401896906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4713739658577488088, guid: 7949816cc74b6a94e9e193d1506fd4b5, type: 3}
+  m_PrefabInstance: {fileID: 933961193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1470766910
 GameObject:
   m_ObjectHideFlags: 0
@@ -30880,7 +30880,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540138516}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
