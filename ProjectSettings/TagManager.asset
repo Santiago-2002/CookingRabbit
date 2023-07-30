@@ -10,6 +10,15 @@ TagManager:
   - Collectable3
   - Trampa
   - FallDetector
+  - Collectable 4
+  - Collectable 5
+  - Collectable 6
+  - Collectable 7
+  - Collectable 8
+  - Collectable 9
+  - Collectable 10
+  - Collectable 11
+  - Collectable 12
   layers:
   - Default
   - TransparentFX
