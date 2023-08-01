@@ -50,6 +50,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Imagenes
+    uniqueID: 2984026913
+    locked: 0
   - name: Plataformas
     uniqueID: 1484473043
     locked: 0
